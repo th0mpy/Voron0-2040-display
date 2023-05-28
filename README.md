@@ -1,6 +1,12 @@
 # Voron0-2040-display
 RP2040 port of the Voron0 display
 
+If you are in the US and want an already built display, you can find them on my Etsy shop here:
+https://www.etsy.com/tArrayEngineering/listing/1458617388/voron0-13-display-based-on-the-rp2040
+
+For those of you in the EU, you can find them on Lab4450:
+https://lab4450.com/product/voron-v02-rp2040-display/
+
 
 I created this port in order to give another option when it comes to the Voron0 display. Additionally it makes use of the easily available RP2040 IC for ease of modificaion and implementation. The files in this github are everything you should need, if you wanted to make your own or if you have any questions about the details of the device. 
 
