@@ -8,16 +8,17 @@ For those of you in the EU, you can find them on Lab4450:
 https://lab4450.com/product/voron-v02-rp2040-display/
 
 
-I created this port in order to give another option when it comes to the Voron0 display. Additionally it makes use of the easily available RP2040 IC for ease of modificaion and implementation. The files in this github are everything you should need, if you wanted to make your own or if you have any questions about the details of the device. 
+I created this port in order to give another option when it comes to the Voron0 display. Additionally it makes use of the easily available RP2040 IC for ease of modificaion and implementation. The files in this github are everything you should need, if you wanted to make your own or if you have any questions about the details of the device.
 
-The display includes both a USB-C connector and 4-pin header. This makes installation a little cleaner, allowing you to use standard dupont connectors versus longer USB connectors. 
+The display includes both a USB-C connector and 4-pin header. This makes installation a little cleaner, allowing you to use standard dupont connectors versus longer USB connectors.
 
-***Only data connector can be used, do not attempt to plug anything into the USB connector while the pin header is in use.
+*** Only one data connector can be used. Do not attempt to plug anything into the USB connector while the pin header is in use.
 
-To contifigure this display, you can use use the following parameters:
+To configure this display, you can use use the following parameters:
 
+```
 [mcu rp2040]
-#serial: /dev/serial/by-id/<modify this value to match your system> Details to be found in http://github.com/th0mpy/v0-2040display
+serial: /dev/serial/by-id/<modify this value to match your system> # Details to be found in http://github.com/th0mpy/v0-2040display
 restart_method: command
 
 [display]
@@ -37,8 +38,7 @@ color_order: GRB
 initial_RED: .6
 initial_GREEN: 0
 initial_BLUE: .75
+```
 
-
-
-One method to find the serial port used by the display is to simply call 'ls /dev/serial/by-id' and look for a device which will be called something like usb-Klipper_rp2040_E6625495537C5221-if00 (the device will show up after it is plugged in).
+One method to find the serial port used by the display is to simply call `ls /dev/serial/by-id` and look for a device which will be called something like usb-Klipper_rp2040_E6625495537C5221-if00 (the device will show up after it is plugged in).
 
