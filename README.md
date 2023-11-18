@@ -18,7 +18,7 @@ To configure this display, you can use use the following parameters:
 
 ```
 [mcu rp2040]
-serial: /dev/serial/by-id/<modify this value to match your system> # Details to be found in http://github.com/th0mpy/v0-2040display
+serial: /dev/serial/by-id/<modify this value to match your system> # Details to be found in https://github.com/th0mpy/Voron0-2040-display
 restart_method: command
 
 [display]
